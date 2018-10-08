@@ -136,27 +136,27 @@
     <ClCompile Include="C:\Users\ContainerAdministrator\AppData\Roaming\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.dll">
+    <CustomBuild Include="..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.dll">
       <FileType>Document</FileType>
-      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.dll&quot; &quot;..\..\build\Release\librdkafkacpp.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.dll&quot; &quot;..\..\build\Release\librdkafkacpp.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
       <Message>Copying deps/librdkafka/win32/outdir/v120/x64/Release/librdkafkacpp.dll to ../build/Release\librdkafkacpp.dll</Message>
       <Outputs>..\..\build\Release\librdkafkacpp.dll</Outputs>
     </CustomBuild>
-    <CustomBuild Include="..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.dll">
+    <CustomBuild Include="..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.dll">
       <FileType>Document</FileType>
-      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.dll&quot; &quot;..\..\build\Release\librdkafka.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.dll&quot; &quot;..\..\build\Release\librdkafka.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
       <Message>Copying deps/librdkafka/win32/outdir/v120/x64/Release/librdkafka.dll to ../build/Release\librdkafka.dll</Message>
       <Outputs>..\..\build\Release\librdkafka.dll</Outputs>
     </CustomBuild>
-    <CustomBuild Include="..\..\deps\deps\librdkafka\win32\librdkafka.sln">
+    <CustomBuild Include="..\..\deps\librdkafka\win32\librdkafka.sln">
       <FileType>Document</FileType>
-      <Command>call call nuget &quot;..\..\deps\restore&quot; &quot;..\..\deps\deps\librdkafka\win32\librdkafka.sln&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%&#xD;&#xA;call call msbuild &quot;..\..\deps\deps\librdkafka\win32\librdkafka.sln&quot; &quot;/p:Configuration=&quot;Release&quot;&quot; &quot;/p:Platform=&quot;x64&quot;&quot; &quot;/t:librdkafkacpp&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Command>call call nuget &quot;restore&quot; &quot;..\..\deps\librdkafka\win32\librdkafka.sln&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%&#xD;&#xA;call call msbuild &quot;..\..\deps\librdkafka\win32\librdkafka.sln&quot; &quot;/p:Configuration=&quot;Release&quot;&quot; &quot;/p:Platform=&quot;x64&quot;&quot; &quot;/t:librdkafkacpp&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
       <Message>nuget_restore, and also build_dependencies</Message>
-      <Outputs>..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.lib;..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.lib</Outputs>
+      <Outputs>..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafkacpp.lib;..\..\deps\librdkafka\win32\outdir\v120\x64\Release\librdkafka.lib</Outputs>
     </CustomBuild>
-    <CustomBuild Include="..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\zlib.dll">
+    <CustomBuild Include="..\..\deps\librdkafka\win32\outdir\v120\x64\Release\zlib.dll">
       <FileType>Document</FileType>
-      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\deps\librdkafka\win32\outdir\v120\x64\Release\zlib.dll&quot; &quot;..\..\build\Release\zlib.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Command>call mkdir &quot;..\..\build\Release&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;..\..\deps\librdkafka\win32\outdir\v120\x64\Release\zlib.dll&quot; &quot;..\..\build\Release\zlib.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
       <Message>Copying deps/librdkafka/win32/outdir/v120/x64/Release/zlib.dll to ../build/Release\zlib.dll</Message>
       <Outputs>..\..\build\Release\zlib.dll</Outputs>
     </CustomBuild>

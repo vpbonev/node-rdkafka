@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "bindings": "1.x",
-    "nan": "2.x"
+    "nan": "^2.11.1"
   },
   "engines": {
     "npm": "^2.7.3"
